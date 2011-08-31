@@ -26,7 +26,7 @@ var params = {
 };
 var vcard = '';
 for(var i = 0; i < search.length; i++) {
-  var items = search[i].split['='];
+  var items = search[i].split('=');
   var key = items[0], value = items[1];
   params[key] = value;
 }
