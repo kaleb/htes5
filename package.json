@@ -1,0 +1,15 @@
+{
+  "author": "Kaleb Hornsby",
+  "name": "htes5",
+  "description": "Hypertext and the ECMAScript 5",
+  "version": "0.0.0",
+  "homepage": "code.google.com/p/htes5",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~v0.4.9-pre"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

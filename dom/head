@@ -1,0 +1,4 @@
+/** @author http://j.mp/bqlfXR */
+if (!document.head) {
+    document.head = document.getElementsByTagName("head")[0];
+}
