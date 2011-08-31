@@ -14,24 +14,23 @@ BDAY:19700101
 END:VCARD
 -->
 <script>
-var search = window.location.search.split('&');
-var params = {
-  BEGIN: 'VCARD', 
+var search = window.location.search.replace('?','')split('&');
+var params = { 
   N: '',
   TEL: '',
   EMAIL: '',
   URL: '',
-  BDAY: '',
-  END: 'VCARD'
+  BDAY: ''
 };
-var vcard = '';
+var vcard = 'VCARD:BEGIN';
 for(var i = 0; i < search.length; i++) {
   var items = search[i].split('=');
   var key = items[0], value = items[1];
   params[key] = value;
 }
 for(var i in params) {
-  vcard += i + ':' + params[i] + '%0A'
+  if(params[i])
+    vcard += '%0A' + i + ':' + params[i];
 }
 /*vcard += "N:Kaleb Hornsby%0A"
 vcard += "TEL:+1 (706) 955-1417%0A"
@@ -40,5 +39,5 @@ vcard += "URL:http://kaleb.hornsby.ws/htes5%0A"
 vcard += "BDAY:19700101%0A"
 vcard += "END:VCARD"*/
 var img = document.getElementById('qr');
-qr.src+=vcard.replace('+','%2B');
+qr.src += vcard.replace('+','%2B') + '%0AVCARD:END';
 </script>
