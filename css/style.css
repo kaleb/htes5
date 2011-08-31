@@ -7,7 +7,7 @@ body { background:lightyellow; }
     background:black;
     color:white;
 }
-a { color:white; }
+a,a:visited { color:white; }
 /* ==|== media queries ======================================================
 PLACEHOLDER Media Queries for Responsive Design.
 These override the primary ('mobile first') styles
