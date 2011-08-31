@@ -3,6 +3,11 @@
 Author:
 ========================================================================== */
 body { background:lightyellow; }
+#site-header, #site-footer {
+    background:black;
+    color:white;
+}
+a { color:white; }
 /* ==|== media queries ======================================================
 PLACEHOLDER Media Queries for Responsive Design.
 These override the primary ('mobile first') styles
@@ -12,8 +17,6 @@ Modify as content requires.
 @media only screen and (min-width: 480px) {
 body { background:lightblue; }
 #site-header, #site-footer {
-    background:black;
-    color:white;
     position:absolute;
     left:0;
     width:100%;
