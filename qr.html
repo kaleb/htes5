@@ -3,7 +3,7 @@
 <style>
 body,img{margin:0;height:100%;overflow:hidden;text-align:center}
 </style>
-<img id=qr src="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl=" title="QR Code">
+<img id=qr src="https://chart.googleapis.com/chart?chld=L|0&chs=400x400&cht=qr&chl=" title="QR Code">
 <!--
 BEGIN:VCARD
 N:;Kaleb Hornsby
@@ -14,14 +14,31 @@ BDAY:19700101
 END:VCARD
 -->
 <script>
-
-var vcard = "BEGIN:VCARD%0A"
-vcard += "N:Kaleb Hornsby%0A"
+var search = window.location.search.split('&');
+var params = {
+  BEGIN: 'VCARD', 
+  N: '',
+  TEL: '',
+  EMAIL: '',
+  URL: '',
+  BDAY: '',
+  END: 'VCARD'
+};
+var vcard = '';
+for(var i = 0; i < search.length; i++) {
+  var items = search[i].split['='];
+  var key = items[0], value = items[1];
+  params[key] = value;
+}
+for(var i in params) {
+  vcard += i + ':' + params[i] + '%0A'
+}
+/*vcard += "N:Kaleb Hornsby%0A"
 vcard += "TEL:+1 (706) 955-1417%0A"
 vcard += "EMAIL:kaleb@hornsby.ws%0A"
 vcard += "URL:http://kaleb.hornsby.ws/htes5%0A"
 vcard += "BDAY:19700101%0A"
-vcard += "END:VCARD"
+vcard += "END:VCARD"*/
 var img = document.getElementById('qr');
 qr.src+=vcard.replace('+','%2B');
 </script>
