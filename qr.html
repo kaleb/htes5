@@ -16,12 +16,12 @@ END:VCARD
 <script>
 
 var vcard = "BEGIN:VCARD%0A"
-vcard += "N:;Kaleb Hornsby%0A"
-vcard += "TEL;CELL:+1 (706) 955-1417%0A"
+vcard += "N:Kaleb Hornsby%0A"
+vcard += "TEL:+1 (706) 955-1417%0A"
 vcard += "EMAIL:kaleb@hornsby.ws%0A"
 vcard += "URL:http://kaleb.hornsby.ws/htes5%0A"
 vcard += "BDAY:19700101%0A"
 vcard += "END:VCARD"
 var img = document.getElementById('qr');
-qr.src+=vcard;
+qr.src+=vcard.replace('+','%2B');
 </script>
