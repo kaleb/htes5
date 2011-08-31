@@ -1,0 +1,30 @@
+---
+layout: main
+title:  forms
+---
+<form id="form">
+<p>
+    <label for="Name">Name</label>
+    <input type="text" id="Name" name="Name" />
+</p>
+
+<p>
+    <label for="Telephone">Telephone</label>
+    <input type="tel" id="Telephone" name="Telephone" maxlength="25"
+    pattern="\+1 \([2-9]\d\d\) \d{3}-\d{4}x?\d*"
+    placeholder="+1 (234) 567-8900x123" />
+</p>
+<p>
+    <label for="Email">Email</label>
+    <input type="email" name="Email" id="Email" placeholder="user@example.com" />
+</p>
+<p>
+    <label for="Birthday">Birthday</label>
+    <input type="date" name="Birthday" id="Birthday" />
+</p>
+<p>
+    <label for="Webstite">Website</label>
+    <input type="url" name="Website" id="Website" placeholder="http://example.com"/>
+</p>
+<input type="submit" name="Submit" value="Submit" />
+</form>
