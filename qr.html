@@ -4,6 +4,24 @@
 body,img{margin:0;height:100%;overflow:hidden;text-align:center}
 </style>
 <img id=qr src="https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl=" title="QR Code">
+<!--
+BEGIN:VCARD
+N:;Kaleb Hornsby
+TEL;CELL:+1 (706) 955-1417
+EMAIL:kaleb@hornsby.ws
+URL:http://kaleb.hornsby.ws/htes5
+BDAY:19700101
+END:VCARD
+-->
 <script>
 
+var vcard = "BEGIN:VCARD\n"
+vcard += "N:;Kaleb Hornsby\n"
+vcard += "TEL;CELL:+1 (706) 955-1417\n"
+vcard += "EMAIL:kaleb@hornsby.ws\n"
+vcard += "URL:http://kaleb.hornsby.ws/htes5\n"
+vcard += "BDAY:19700101\n"
+vcard += "END:VCARD"
+var img = document.getElement('qr');
+qr.src+=vcard;
 </script>
