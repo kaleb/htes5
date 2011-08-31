@@ -14,6 +14,27 @@ This behavior comes from using CSS media queries.  That's right.  Not JavaScript
 
 This is what the media queries look like:
 
+{% highlight css%}
+/* This is for all widths. */
+body {
+  background-color:lightgreen;
+}
+
+/* This is for all widths greater than 480 pixels wide. */
+@media only screen and (min-width: 480px) {
+  body {
+    background:lightblue;
+  }
+}
+
+/* This is for all widths greater than 768 pixels wide. */
+@media only screen and (min-width: 768px) {
+  body {
+    background:lightgreen;
+  }
+}
+{% endhighlight%}
+
 <h2>Support</h2>
 
 <h2>Respond.js</h2>
