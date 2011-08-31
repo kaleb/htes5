@@ -29,7 +29,7 @@ for(var i = 0; i < search.length; i++) {
   params[key] = value;
 }
 for(var i in params) {
-  if(params[i])
+  if(params[i] && i != 'Submit')
     vcard += '%0A' + i + ':' + params[i];
 }
 /*vcard += "N:Kaleb Hornsby%0A"
