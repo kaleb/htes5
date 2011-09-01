@@ -1,4 +1,11 @@
-@import url('normalize.css');
+@import url('http://kaleb.hornsby.ws/htes5/css/normalize.css');
+article article h1, article aside h1, article nav h1,
+article section h1, aside article h1, aside aside h1, aside nav h1,
+aside section h1, nav article h1, nav aside h1, nav nav h1,
+nav section h1, section article h1, section aside h1, section nav h1,
+section section h1 {
+  font-size: 1.17em;
+}
 #site-footer, #site-header, #site-sidebar, body {
   background-color: #222;
   background-color: rgba(34, 34, 34, 0.9);
