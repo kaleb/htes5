@@ -10,7 +10,7 @@
 }
 #site-footer, #site-header, #site-sidebar, body {
   background-color: #222;
-  background-color: rgba(34, 34, 34, 0.9);
+  /*background-color: rgba(34, 34, 34, 0.9);*/
 }
 #site-footer, #site-header, #site-sidebar {
   color: white;
@@ -113,7 +113,7 @@ label {
 .highlight {
   padding: 0.5em;
   background: #222;
-  background-color: rgba(34, 34, 34, 0.9);
+  /*background-color: rgba(34, 34, 34, 0.9);*/
   color: #d0d0d0;
 }
 .highlight .hll {
