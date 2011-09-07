@@ -31,7 +31,10 @@ Modernizr.load([{
 <div id="container">
 <header id="site-header">
     <hgroup>
-        <h1><a href="/htes5" style="color:white;" title="Hypertext and the ECMAScript 5">HTES5</a></h1>
+        <h1>{% if page.url == "/index.html" %}
+          HTES5{% else %}
+          <a href="/htes5" style="color:white;" title="Hypertext and the ECMAScript 5">HTES5</a>{% endif %}
+        </h1>
         <h2>{{ page.title }}</h2>
     </hgroup>
     <a href="#site-sidebar">Navigation</a>
