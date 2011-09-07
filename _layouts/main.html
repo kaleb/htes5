@@ -43,13 +43,22 @@ Modernizr.load([{
     <nav>
         <h1>Navigation</h1>
         <ul>
-            <li>{% if page.url == '/index.html' %}
+            <li>{% if page.url == '/respond.html' %}
               <b>Respond</b>{% else %}
               <a href="/htes5/respond" title="Responsive Design">Respond</a>{% endif %}
             </li>
-            <li><a href="/htes5/forms" title="Web Forms 2.0">Formulate</a></li>
-            <li><a href="/htes5/semantics" title="Semanticated Content">Semanticate</a></li>
-            <li><a href="/htes5/resources" title="Grok the Fullness">Grok</a></li>
+            <li>{% if page.url == '/forms.html' %}
+              <b>Formulate</b>{% else %}
+              <a href="/htes5/forms" title="Web Forms 2.0">Formulate</a>{% endif %}
+            </li>
+            <li>{% if page.url == '/semantics.html' %}
+              <b>Semanticate</b>{% else %}
+              <a href="/htes5/semantics" title="Semanticated Content">Semanticate</a>{% endif %}
+            </li>
+            <li>{% if page.url == '/resources.html' %}
+              <b>Grok</b>{% else %}
+              <a href="/htes5/resources" title="Grok the Fullness">Grok</a>{% endif %}
+            </li>
         </ul>
     </nav>
 </aside>
