@@ -63,8 +63,8 @@ label {
 @media only screen and (min-width: 480px) {
   #site-header h2 {
     margin: 0;
-    position: absolute;
     position: fixed;
+    _position: absolute;
     top: 0;
     left: 140px;
     white-space: nowrap;
