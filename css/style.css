@@ -462,7 +462,7 @@ label {
 }
 .ie6 #site-footer {
   position:absolute;
-  bottom:0;
+  _bottom:expression(0);
 }
 .ie6 #site-sidebar {
   _height:expression(document.body.clientHeight);
