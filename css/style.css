@@ -80,7 +80,7 @@ label {
 }
 @media only screen and (min-width: 480px) {
   #site-sidebar {
-    position: fixed;
+    position: absolute;
     width: 140px;
     left: 0;
     top: 2.5em;
