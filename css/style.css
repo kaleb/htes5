@@ -465,5 +465,5 @@ label {
   bottom:0;
 }
 .ie6 #site-sidebar {
-  height:100%;
+  _height:expression(document.body.clientHeight);
 }
