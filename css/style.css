@@ -464,3 +464,6 @@ label {
   position:absolute;
   bottom:0;
 }
+.ie6 #site-sidebar {
+  height:100%;
+}
