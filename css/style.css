@@ -460,3 +460,7 @@ label {
     page-break-after: avoid;
   }
 }
+.ie6 #site-footer {
+  position:absolute;
+  bottom:0;
+}
